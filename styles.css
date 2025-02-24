@@ -8,20 +8,18 @@ body {
 
 .header {
     position: fixed;
-    top: 0px; /* Moves the header up */
+    top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px; /* Adjusted padding for a better look */
-    text-align: center;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    justify-content: center; /* Center align the nav */
+    padding: 10px 20px; /* Reduce padding to make it smaller */
+    background: rgba(0, 0, 0, 0.5); /* Slightly darker for better contrast */
     color: white;
-    text-align: center;
     z-index: 1000;
-    font-family: 'Playfair Display', serif; /* Elegant font */
-    font-size: 0.7rem;
+    font-family: 'Playfair Display', serif; /* Elegant and modern font */
+    font-size: 1rem; /* Slightly larger than before for readability */
 }
 
 .navbar {
