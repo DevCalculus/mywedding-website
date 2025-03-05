@@ -1,75 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iyiola & Oghenerukevwe's Wedding</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="index.html">We're Getting Married</a>
-            <a href="how-it-all-started.html" class="active">How It All Started</a>
-            <a href="#">We Go Nuts</a>
-        </nav>
-        <nav class="navbar">
-            <a href="#">RSVP</a>
-            <a href="#">Gifts</a>
-            <a href="#">Spots</a>
-        </nav>
-    </header>    
+  <body>
+    <!-- Navigation Section  -->
+    <nav class="navbar">
+      <a href="index.html" class="active">We're Getting Married</a>
+      <a href="how-it-all-started.html">How It All Started</a>
+      <a href="#rsvp">RSVP</a>
+      <a href="#">Gifts</a>
+      <img class="hamburger" src="/assets/icon-hamburger.svg" alt="Menu" />
+    </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Iyiola & Oghenerukevwe</h1>
-            <p class="tagline">We're Getting Married!</p>
-            <p class="wedding-date">Join us on 15th & 16th August, 2025</p>
+    <!-- hero section -->
+    <div class="side-bar hidden">
+      <ul class="mainMenu">
+        <div class="closeMenu">
+          <img src="/assets/icon-close.svg" alt="Close Menu" />
         </div>
-    </header>
-
-    <div class="image-container">
-        <img src="image1.jpeg" alt="Iyiola & Oghenerukevwe">
-        <img src="image2.jpeg" alt="Iyiola & Oghenerukevwe">
+        <li>
+          <a href="/home.html">We're Getting Married</a>
+        </li>
+        <li>
+          <a href="#">How It All Started</a>
+        </li>
+        <li>
+          <a href="#">RSVP</a>
+        </li>
+        <li>
+          <a href="#">Gifts</a>
+        </li>
+      </ul>
     </div>
 
-    <section id="our-story" class="section">
-        <h2>Our Love Story</h2>
-        <p>From the first moment we met, our journey has been filled with love, laughter, and unforgettable moments...</p>
+    <!-- Gallery Section  -->
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Iyiola & Oghenerukevwe</h1>
+        <p class="tagline">We're Getting Married!</p>
+        <p class="wedding-date">Join us on 15th & 16th August, 2025</p>
+      </div>
+    </div>
+
+    <!-- Our Love Story Section  -->
+
+    <section id="our-story" class="our-story">
+      <h2>Our Love Story</h2>
+      <p>
+        From the first moment we met, our journey has been filled with love,
+        laughter, and unforgettable moments...
+      </p>
     </section>
 
-    <section id="wedding-details" class="section">
-        <h2>Wedding Details</h2>
-        <div class="details-container">
-            <p><strong>Venue:</strong> Landmark Event Center, Sango Ota, Ogun State</p>
-            <p><strong>Date & Time:</strong> August 15th and 16th, 2025</p>
-        </div>
+    <!-- Image Gallery Section  -->
+
+    <div class="image-container">
+      <img src="/assets/image1.jpeg" alt="Iyiola & Oghenerukevwe" />
+      <img src="/assets/image2.jpeg" alt="Iyiola & Oghenerukevwe" />
+    </div>
+
+    <!-- Wedding Details Section  -->
+
+    <section id="wedding-details" class="wedding-details">
+      <h2>Wedding Details</h2>
+      <div class="details-container">
+        <p>
+          <strong>Venue:</strong> Landmark Event Center, Sango Ota, Ogun State
+        </p>
+        <p><strong>Date & Time:</strong> August 15th and 16th, 2025</p>
+      </div>
     </section>
 
-    <section id="rsvp" class="section">
+    <section id="gallery" class="gallery-section">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="/assets/image1.jpeg" alt="Special moment 1" />
+        <img src="/assets/image2.jpeg" alt="Special moment 2" />
+        <img src="/assets/image3.jpeg" alt="Special moment 3" />
+        <img src="/assets/image4.jpeg" alt="Special moment 4" />
+        <img src="/assets/image5.jpeg" alt="Special moment 5" />
+        <img src="/assets/image6.jpeg" alt="Special moment 6" />
+      </div>
+    </section>
+
+    <section id="rsvp">
+      <div class="rsvp-card">
         <h2>RSVP</h2>
         <form class="rsvp-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </section>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
 
-    <section id="gallery" class="section">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <p>Photos coming soon...</p>
-        </div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2025 Iyiola & Oghenerukevwe. All rights reserved.</p>
+      <p>&copy; 2025 Iyiola & Oghenerukevwe. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
