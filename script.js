@@ -83,12 +83,28 @@ import("https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js")
       // 🟢 LIVE COMMENTS UPDATE
       const commentsList = document.querySelector("#commentsList");
       if (commentsList) {
+        // onSnapshot(commentsRef, (snapshot) => {
+        //   commentsList.innerHTML = "";
+        //   snapshot.forEach((doc) => {
+        //     const data = doc.data();
+        //     commentsList.innerHTML += `<p><strong>${data.name}:</strong> ${data.message}</p>`;
+        //   });
+        // });
         onSnapshot(commentsRef, (snapshot) => {
-          commentsList.innerHTML = "";
+          const commentsList = document.querySelector("#commentsList");
+          commentsList.innerHTML = ""; // Clear previous comments
+
+          let commentsArray = [];
+
           snapshot.forEach((doc) => {
             const data = doc.data();
-            commentsList.innerHTML += `<p><strong>${data.name}:</strong> ${data.message}</p>`;
+            commentsArray.push(
+              `<p><strong>${data.name}:</strong> ${data.message}</p>`
+            );
           });
+
+          // Join comments and set them inside the marquee
+          commentsList.innerHTML = commentsArray.join(" ");
         });
       }
     })

@@ -517,6 +517,7 @@ body {
   padding: 40px;
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 80px;
 }
 
 .footer p {
@@ -547,4 +548,39 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comments-ticker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.comments-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollLeft 15s linear infinite;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.comments-marquee p {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d8aa11;
 }
