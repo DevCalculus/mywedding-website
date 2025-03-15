@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCountdown();
 });
 
-// 🟢 FIREBASE INITIALIZATION (Ensures it loads after the DOM)
+// 🟢 FIREBASE INITIALIZATION
 import("https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js")
   .then(({ initializeApp }) =>
     import(
