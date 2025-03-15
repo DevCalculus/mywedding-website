@@ -115,7 +115,7 @@ body {
 
 /* hero section */
 .hero {
-  background: url("wedding-banner.jpg") no-repeat center center/cover;
+  background: url("/assets/image_fx_ (3).jpg") no-repeat center center/cover;
   color: white;
   display: flex;
   align-items: center;
@@ -259,9 +259,19 @@ body {
 .how-it-all-started {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/assets/love-bg.jpg") center/cover no-repeat;
+    url("/assets/image_fx_ (6).jpg") center/cover no-repeat;
   color: white;
   padding: 80px 20px;
+
+  /* background: url("/assets/image_fx_ (3).jpg") no-repeat center center/cover; */
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+  /* position: relative; */
+  /* padding: 20px; */
 }
 
 .how-it-all-started h1 {
@@ -387,7 +397,7 @@ body {
   margin-top: 5px;
 }
 
-#commentForm button {
+#comment-button {
   width: 100%;
   padding: 10px;
   background: #007bff;
@@ -399,7 +409,7 @@ body {
   transition: background 0.3s ease;
 }
 
-#commentForm button:hover {
+#comment-button:hover {
   background: #0056b3;
 }
 
@@ -507,6 +517,7 @@ body {
   padding: 40px;
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 80px;
 }
 
 .footer p {
@@ -537,4 +548,39 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comments-ticker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.comments-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollLeft 15s linear infinite;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.comments-marquee p {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d8aa11;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iyiola & Oghenerukevwe's Wedding</title>
+    <title>Oghenerukevwe & Iyiola's Wedding</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
@@ -45,7 +45,7 @@
     <!-- Gallery Section  -->
     <div class="hero">
       <div class="hero-content">
-        <h1>Iyiola & Oghenerukevwe</h1>
+        <h1>Oghenerukevwe & Iyiola</h1>
         <p class="tagline">We're Getting Married!</p>
         <p class="wedding-date">Join us on 15th & 16th August, 2025</p>
         <!-- <div id="countdown"></div> -->
@@ -91,7 +91,7 @@
       <form id="commentForm">
         <input type="text" id="name" placeholder="Your Name" required />
         <textarea id="message" placeholder="Your Comment" required></textarea>
-        <button type="submit">Post Comment</button>
+        <button id="comment-button" type="submit">Post Comment</button>
       </form>
       <!-- <div id="commentsList"></div> -->
     </section>
@@ -133,5 +133,9 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <div class="comments-ticker">
+      <div class="comments-marquee" id="commentsList"></div>
+    </div>
   </body>
 </html>
