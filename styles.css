@@ -115,7 +115,7 @@ body {
 
 /* hero section */
 .hero {
-  background: url("wedding-banner.jpg") no-repeat center center/cover;
+  background: url("/assets/image_fx.jpg") no-repeat center center/cover;
   color: white;
   display: flex;
   align-items: center;
@@ -387,7 +387,7 @@ body {
   margin-top: 5px;
 }
 
-#commentForm button {
+#comment-button {
   width: 100%;
   padding: 10px;
   background: #007bff;
@@ -399,7 +399,7 @@ body {
   transition: background 0.3s ease;
 }
 
-#commentForm button:hover {
+#comment-button:hover {
   background: #0056b3;
 }
 
